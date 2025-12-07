@@ -1,73 +1,113 @@
-# Welcome to your Lovable project
+🧠 Smart Task Planner
+AI-Enhanced Productivity & Smart Task Management
 
-## Project info
+🔗 Live Demo: https://smart-task-planner-prasad999999.vercel.app
 
-**URL**: https://lovable.dev/projects/5fece0bb-0cc0-4f71-b817-b29d41d27b38
+🛠 Tech Stack: React • TypeScript • Vite • Supabase • ShadCN UI • Framer Motion
 
-## How can I edit this code?
+📌 Overview
 
-There are several ways of editing your application.
+Smart Task Planner is a modern and intelligent task management app that helps users stay organized and productive.
+It includes authentication, smart task scoring, overdue detection, dashboard analytics, and a clean modern UI.
 
-**Use Lovable**
+🚀 Features
+🔐 Authentication (Supabase)
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/5fece0bb-0cc0-4f71-b817-b29d41d27b38) and start prompting.
+Email/password signup & login
 
-Changes made via Lovable will be committed automatically to this repo.
+Secure protected routes
 
-**Use your preferred IDE**
+Auto session restore
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+📝 Task Management
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Create, update, delete tasks
 
-Follow these steps:
+Categories: Work / Personal / Study
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Priority: High / Medium / Low
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Status: todo → in_progress → done
 
-# Step 3: Install the necessary dependencies.
-npm i
+Local timezone–safe due dates
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+Overdue detection
+
+🧠 Smart Recommendation Engine
+
+Each task gets a score based on:
+
+Priority weight
+
+Urgency
+
+Deadline proximity
+
+Overdue boost
+
+👉 The app highlights the best task to work on next.
+
+📊 Dashboard & Insights
+
+Due today
+
+Overdue
+
+Completed vs pending
+
+Weekly productivity chart
+
+Recommended task
+
+🎨 UI/UX Highlights
+
+Built with ShadCN UI
+
+Smooth animations with Framer Motion
+
+Responsive and accessible
+
+Clean gradient design system
+
+🗄️ Database Schema (Supabase)
+profiles
+column	type	description
+id	uuid	FK → auth.users
+name	text	user full name
+tasks
+column	type	example
+id	uuid	primary key
+user_id	uuid	FK → profiles.id
+title	text	"Finish project"
+description	text	nullable
+priority	text	"high"
+category	text	"Work"
+status	text	"todo"
+due_date	date	"2025-01-15"
+created_at	timestamp	now()
+🛠️ Local Development
+1️⃣ Clone the Repo
+git clone https://github.com/prasad999999/SMART-TASK-PLANNER.git
+cd SMART-TASK-PLANNER
+
+2️⃣ Install Dependencies
+npm install
+
+3️⃣ Add Environment Variables
+
+Create .env:
+
+VITE_SUPABASE_URL=your-url
+VITE_SUPABASE_ANON_KEY=your-anon-key
+
+4️⃣ Start Dev Server
 npm run dev
-```
 
-**Edit a file directly in GitHub**
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Visit:
+👉 http://localhost:8080
 
-**Use GitHub Codespaces**
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+👨‍💻 Author
 
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/5fece0bb-0cc0-4f71-b817-b29d41d27b38) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Prasad Ghadge — Developer & Designer
