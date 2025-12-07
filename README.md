@@ -1,113 +1,88 @@
-🧠 Smart Task Planner
-AI-Enhanced Productivity & Smart Task Management
+# 🧠 Smart Task Planner  
+A clean, modern task manager with smart recommendations and Supabase-powered backend.
 
-🔗 Live Demo: https://smart-task-planner-prasad999999.vercel.app
+🔗 **Live App:** https://smart-task-planner-prasad999999.vercel.app  
+🛠 **Built With:** React · TypeScript · Vite · Supabase · ShadCN UI
 
-🛠 Tech Stack: React • TypeScript • Vite • Supabase • ShadCN UI • Framer Motion
+---
 
-📌 Overview
+## ⭐ Overview  
+Smart Task Planner helps you stay organized and productive with:
 
-Smart Task Planner is a modern and intelligent task management app that helps users stay organized and productive.
-It includes authentication, smart task scoring, overdue detection, dashboard analytics, and a clean modern UI.
+- Simple task management  
+- Smart scoring to recommend the next best task  
+- Due date tracking with timezone safety  
+- A visual dashboard showing weekly productivity  
+- Beautiful, responsive UI  
 
-🚀 Features
-🔐 Authentication (Supabase)
+---
 
-Email/password signup & login
+## 🚀 Features
 
-Secure protected routes
+### 🔐 Authentication
+- Email/password login & signup  
+- Secure protected routes  
+- Auto session restore  
 
-Auto session restore
+### 📝 Task Management
+- Create, edit, and delete tasks  
+- Priorities: **High / Medium / Low**  
+- Categories: **Work / Personal / Study**  
+- Status workflow: **todo → in_progress → done**  
+- Overdue detection  
+- Local-timezone safe due dates  
 
-📝 Task Management
+### 🧠 Smart Task Engine
+Each task receives a score based on:
 
-Create, update, delete tasks
+- Priority weight  
+- Deadline urgency  
+- Overdue boost  
 
-Categories: Work / Personal / Study
+The app uses this score to show a **Recommended Task** with reasoning.
 
-Priority: High / Medium / Low
+### 📊 Dashboard
+- Tasks due today  
+- Overdue tasks  
+- Completed vs pending  
+- 7-day productivity chart  
 
-Status: todo → in_progress → done
+### 🎨 Modern UI
+- ShadCN UI components  
+- Framer Motion animations  
+- Gradient theme  
+- Fully responsive layout  
 
-Local timezone–safe due dates
+---
 
-Overdue detection
+## 🛠 Local Development
 
-🧠 Smart Recommendation Engine
-
-Each task gets a score based on:
-
-Priority weight
-
-Urgency
-
-Deadline proximity
-
-Overdue boost
-
-👉 The app highlights the best task to work on next.
-
-📊 Dashboard & Insights
-
-Due today
-
-Overdue
-
-Completed vs pending
-
-Weekly productivity chart
-
-Recommended task
-
-🎨 UI/UX Highlights
-
-Built with ShadCN UI
-
-Smooth animations with Framer Motion
-
-Responsive and accessible
-
-Clean gradient design system
-
-🗄️ Database Schema (Supabase)
-profiles
-column	type	description
-id	uuid	FK → auth.users
-name	text	user full name
-tasks
-column	type	example
-id	uuid	primary key
-user_id	uuid	FK → profiles.id
-title	text	"Finish project"
-description	text	nullable
-priority	text	"high"
-category	text	"Work"
-status	text	"todo"
-due_date	date	"2025-01-15"
-created_at	timestamp	now()
-🛠️ Local Development
-1️⃣ Clone the Repo
+### 1. Clone Repository
+```sh
 git clone https://github.com/prasad999999/SMART-TASK-PLANNER.git
 cd SMART-TASK-PLANNER
-
-2️⃣ Install Dependencies
+```
+### 2. Install Dependencies
+```
 npm install
+```
 
-3️⃣ Add Environment Variables
+3. Create .env
+```
+VITE_SUPABASE_URL=your-supabase-url
+VITE_SUPABASE_ANON_KEY=your-supabase-anon-key
+```
 
-Create .env:
-
-VITE_SUPABASE_URL=your-url
-VITE_SUPABASE_ANON_KEY=your-anon-key
-
-4️⃣ Start Dev Server
+5. Start Dev Server
+```
 npm run dev
+```
 
 
-Visit:
+App runs at:
 👉 http://localhost:8080
 
+👤 Author
 
-👨‍💻 Author
-
-Prasad Ghadge — Developer & Designer
+Prasad Ghadge
+Developer & Designer
