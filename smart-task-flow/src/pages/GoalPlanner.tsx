@@ -8,14 +8,17 @@ export default function GoalPlanner() {
   const [goal, setGoal] = useState("");
   const [loading, setLoading] = useState(false);
   const [plan, setPlan] = useState<any | null>(null);
-
+  const API_URL = import.meta.env.VITE_API_URL;
+  
   const generatePlan = async () => {
     if (!goal.trim()) return;
 
     setLoading(true);
     setPlan(null);
 
-    const res = await fetch("http://localhost:5000/api/generate-plan", {
+
+    const res = await fetch(`${API_URL}/api/generate-plan`, {
+    
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ goal }),
