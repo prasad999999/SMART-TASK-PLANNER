@@ -3,6 +3,7 @@ import { CheckSquare, LayoutDashboard, ListTodo, Plus, User, LogOut } from "luci
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { useAuth } from "@/contexts/AuthContext";
+import { Sparkles } from "lucide-react";
 
 import {
   DropdownMenu,
@@ -12,10 +13,13 @@ import {
   DropdownMenuSeparator,
 } from "@/components/ui/dropdown-menu";
 
+
 const navLinks = [
   { href: "/dashboard", label: "Dashboard", icon: LayoutDashboard },
   { href: "/tasks", label: "Tasks", icon: ListTodo },
+  { href: "/goal-planner", label: "Goal Planner", icon: Sparkles }, // ⭐ Better UX
 ];
+
 
 export function Header() {
   const location = useLocation();

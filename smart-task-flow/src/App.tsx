@@ -15,6 +15,7 @@ import NotFound from "./pages/NotFound";
 
 import { AuthProvider } from "@/contexts/AuthContext";  // ⬅ NEW
 import { ProtectedRoute } from "@/components/auth/ProtectedRoute"; // ⬅ NEW
+import GoalPlanner from "./pages/GoalPlanner";
 
 const queryClient = new QueryClient();
 
@@ -37,6 +38,8 @@ const App = () => (
                 <Route path="/tasks" element={<Tasks />} />
                 <Route path="/tasks/create" element={<TaskCreate />} />
                 <Route path="/tasks/:id" element={<TaskEdit />} />
+                <Route path="/goal-planner" element={<GoalPlanner />} />
+
               </Route>
             </Route>
 

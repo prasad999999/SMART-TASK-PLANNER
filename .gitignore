@@ -1,75 +1,51 @@
-# -------------------------
-# Node / Dependencies
-# -------------------------
+# ---------------------------
+# Global Node + TypeScript Ignore
+# ---------------------------
 node_modules/
+dist/
+build/
+.cache/
+.temp/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ---------------------------
+# Logs
+# ---------------------------
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
+bun-debug.log*
+*.log
 
-# -------------------------
-# Environment Variables
-# -------------------------
+# ---------------------------
+# Environment Files
+# ---------------------------
 .env
 .env.local
 .env.*.local
 
-# Supabase
-supabase/.temp
-supabase/.branches
-supabase/migrations/*.lock
+# ---------------------------
+# Frontend (Vite)
+# ---------------------------
+smart-task-flow/node_modules/
+smart-task-flow/dist/
+smart-task-flow/.vite/
+smart-task-flow/.vercel/
 
-# -------------------------
-# Build Output
-# -------------------------
-dist/
-build/
-.next/
-out/
-.vercel/
+# ---------------------------
+# Backend (Node + Express)
+# ---------------------------
+smart-task-flow-backend/node_modules/
+smart-task-flow-backend/dist/
+smart-task-flow-backend/*.env
+smart-task-flow-backend/.tsbuildinfo
 
-# -------------------------
-# Logs
-# -------------------------
-logs/
-*.log
-logs/**/*.log
-
-# -------------------------
-# OS & Editor Files
-# -------------------------
-.DS_Store
-Thumbs.db
-
-# VSCode
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-
-# -------------------------
-# Cache
-# -------------------------
-.cache/
-.eslintcache
-.stylelintcache
-
-# -------------------------
-# TypeScript
-# -------------------------
-*.tsbuildinfo
-
-# -------------------------
-# Storybook / Testing
-# -------------------------
-storybook-static/
-coverage/
-
-# -------------------------
-# Misc
-# -------------------------
-*.local
-*.pid
-*.seed
-*.pid.lock
+# ---------------------------
+# OS Files
+# ---------------------------
+*.swp
+*.swm
