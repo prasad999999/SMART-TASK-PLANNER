@@ -1,73 +1,88 @@
-# Welcome to your Lovable project
+# 🧠 Smart Task Planner  
+A clean, modern task manager with smart recommendations and Supabase-powered backend.
 
-## Project info
+🔗 **Live App:** https://smart-task-planner-prasad999999.vercel.app  
+🛠 **Built With:** React · TypeScript · Vite · Supabase · ShadCN UI
 
-**URL**: https://lovable.dev/projects/5fece0bb-0cc0-4f71-b817-b29d41d27b38
+---
 
-## How can I edit this code?
+## ⭐ Overview  
+Smart Task Planner helps you stay organized and productive with:
 
-There are several ways of editing your application.
+- Simple task management  
+- Smart scoring to recommend the next best task  
+- Due date tracking with timezone safety  
+- A visual dashboard showing weekly productivity  
+- Beautiful, responsive UI  
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/5fece0bb-0cc0-4f71-b817-b29d41d27b38) and start prompting.
+## 🚀 Features
 
-Changes made via Lovable will be committed automatically to this repo.
+### 🔐 Authentication
+- Email/password login & signup  
+- Secure protected routes  
+- Auto session restore  
 
-**Use your preferred IDE**
+### 📝 Task Management
+- Create, edit, and delete tasks  
+- Priorities: **High / Medium / Low**  
+- Categories: **Work / Personal / Study**  
+- Status workflow: **todo → in_progress → done**  
+- Overdue detection  
+- Local-timezone safe due dates  
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### 🧠 Smart Task Engine
+Each task receives a score based on:
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- Priority weight  
+- Deadline urgency  
+- Overdue boost  
 
-Follow these steps:
+The app uses this score to show a **Recommended Task** with reasoning.
 
+### 📊 Dashboard
+- Tasks due today  
+- Overdue tasks  
+- Completed vs pending  
+- 7-day productivity chart  
+
+### 🎨 Modern UI
+- ShadCN UI components  
+- Framer Motion animations  
+- Gradient theme  
+- Fully responsive layout  
+
+---
+
+## 🛠 Local Development
+
+### 1. Clone Repository
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+git clone https://github.com/prasad999999/SMART-TASK-PLANNER.git
+cd SMART-TASK-PLANNER
+```
+### 2. Install Dependencies
+```
+npm install
+```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+3. Create .env
+```
+VITE_SUPABASE_URL=your-supabase-url
+VITE_SUPABASE_ANON_KEY=your-supabase-anon-key
+```
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+5. Start Dev Server
+```
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+App runs at:
+👉 http://localhost:8080
 
-**Use GitHub Codespaces**
+👤 Author
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/5fece0bb-0cc0-4f71-b817-b29d41d27b38) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Prasad Ghadge
+Developer & Designer
