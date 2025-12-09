@@ -39,7 +39,7 @@ A modern, user-friendly task manager with:
 
 ## **2️⃣ AI Goal Breakdown System**
 
-A separate feature required by the assignment:
+A separate feature developed:
 
 > **Break a user goal into actionable tasks, dependencies, and timelines using LLM reasoning.**
 
@@ -51,8 +51,6 @@ This feature is implemented through:
     
 - A clean React-based **Goal Planner frontend page**
     
-
-Both systems work independently but are included in a single repository as per deliverable guidelines.
 
 ---
 
@@ -276,17 +274,12 @@ Frontend will run at:
 ### Create Task
 ![Create Task](screenshots/create-task.png)
 
-### Recommended Task
-![Recommended Task](screenshots/recommended-task.png)
-
 ### AI Goal Planner – Input
 ![Goal Planner Input](screenshots/goal-input.png)
 
 ### AI Goal Planner – Output
 ![Goal Planner Output](screenshots/goal-output.png)
 
-### Backend API Test
-![API Test](screenshots/api-test.png)
 
 ---
 
