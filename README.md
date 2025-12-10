@@ -5,7 +5,6 @@
 A full–stack productivity system combining **task management**, **smart recommendations**, and **AI-powered goal breakdown**.
 
 🔗 **Live App:** [https://smart-task-planner-prasad999999.vercel.app](https://smart-task-planner-prasad999999.vercel.app/)  
-⚙️ **Backend API:** [https://smart-task-planner-9b1y.onrender.com/api/generate-plan](https://smart-task-planner-9b1y.onrender.com/api/generate-plan)  
 
 ---
 
