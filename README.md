@@ -252,15 +252,58 @@ Backend will run at:
 
 ## 3️⃣ Frontend Setup
 
+### Step 1 — Enter the frontend folder
 ```sh
 cd smart-task-flow
+```
+
+### Step 2 — Install dependencies
+
+```sh
 npm install
+```
+
+### Step 3 — Create a `.env` file inside `smart-task-flow/`
+
+Add the following variables:
+
+```env
+VITE_SUPABASE_URL=your-supabase-url
+VITE_SUPABASE_ANON_KEY=your-supabase-anon-key
+
+# Backend API running on Render (or local server)
+VITE_API_URL=https://smart-task-planner-9b1y.onrender.com
+```
+
+### Step 4 — Run the local development server
+
+```sh
 npm run dev
 ```
 
-Frontend will run at:  
-📍 [http://localhost:5173](http://localhost:8080/)
+The app will run at:
 
+📍 **[http://localhost:8080](http://localhost:8080/)**  
+
+---
+
+# 🧪 Correct Local Backend + Frontend Workflow
+
+### If backend is running locally:
+
+Set:
+
+```
+VITE_API_URL=http://localhost:5000
+```
+
+### If backend is on Render:
+
+Set:
+
+```
+VITE_API_URL=https://smart-task-planner-9b1y.onrender.com
+```
 ---
 
 ## 📸 Screenshots
