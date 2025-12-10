@@ -270,9 +270,7 @@ Add the following variables:
 ```env
 VITE_SUPABASE_URL=your-supabase-url
 VITE_SUPABASE_ANON_KEY=your-supabase-anon-key
-
-# Backend API running on Render (or local server)
-VITE_API_URL=https://smart-task-planner-9b1y.onrender.com
+VITE_API_URL=http://localhost:5000/
 ```
 
 ### Step 4 — Run the local development server
@@ -297,13 +295,6 @@ Set:
 VITE_API_URL=http://localhost:5000
 ```
 
-### If backend is on Render:
-
-Set:
-
-```
-VITE_API_URL=https://smart-task-planner-9b1y.onrender.com
-```
 ---
 
 ## 📸 Screenshots
