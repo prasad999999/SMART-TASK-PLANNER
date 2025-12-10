@@ -154,7 +154,7 @@ Score is used to compute:
 
 ---
 
-# **II. AI Goal Breakdown System (Assignment Feature)**
+# **II. AI Goal Breakdown System**
 
 ## 🎯 Objective
 
